@@ -1,5 +1,7 @@
-import java.util.Scanner;
+package Funcoes_e_Modularizacao;
 
+import java.util.Scanner;
+//Funcao para verificar se o numero e primo
 public class primuns {
 
     public static boolean ehPrimo( int n ) {
@@ -26,6 +28,7 @@ public class primuns {
         System.out.println("Digite o numero final: ");
         int n2 = scanner.nextInt();
 
+// Chamando a funcao e printando os valores
         System.out.println("Numeros primos entre" + n1 + " e " + n2 + ":");
         for (int i = n1; i <= n2; i++){
             if (ehPrimo(i)){

@@ -20,7 +20,7 @@ Instruções para desenvolvimento dos exercícios:
    Escreva uma função `bool ehPrimo(int n)` e use-a para listar todos os primos entre dois números dados pelo usuário.
 
 2. **Potência (sem usar `pow`)**  
-   Implemente uma função `int potencia(int base, int expoente)` que calcule potências usando apenas multiplicações.
+   Implemente uma função `int Funcoes_e_Modularizacao.CalcPotencia(int base, int expoente)` que calcule potências usando apenas multiplicações.
 
 3. **Inverso de Número**  
    Escreva uma função que inverte os dígitos de um número (ex: `1234 → 4321`).
