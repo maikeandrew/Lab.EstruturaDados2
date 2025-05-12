@@ -20,11 +20,15 @@ public class Calculadora {
                     case '-' : resultado = a - b; break;
                     case '*' : resultado = a * b; break;
                     case '/' :
-                    //throw aqui esta forcando um erro caso o usuario tente algo invalido
-                    // Arithmetic operacoes matematicas invalidas
-                        if (b == 0) throw new ArithmeticException(" Divisao por zero!");
+                        // Tratamento de erro Divisao por zero!
+                        if (b == 0){
+                            System.out.println("Erro: Divisao por zero!");
+                            return; //Encerra sem calcular
+                        }
                         resultado = a / b; break;
+
                     case '^': resultado = Math.pow(a, b); break;
+
                     // IllegalArgument, Quando o argumento e invalido
                     default: throw new IllegalArgumentException("Operacao Invalida!");
                     }
