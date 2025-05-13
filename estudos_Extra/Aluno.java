@@ -16,7 +16,7 @@ public class Aluno {
         double nota3 = scanner.nextDouble();
 
         // calcula das notas
-        double media = (nota1 + nota2 + nota3)/3;
+        double media = (nota1 + nota2 + nota3) / 3;
 
         // Verificacao de aprovacao
         String resultado = media >= 7 ? " foi aprovado! " : " foi reprovado! ";
@@ -27,7 +27,7 @@ public class Aluno {
             resultado = "Aluno reprovado! ";
         }
 */
-        System.out.printf( nomeAluno + resultado + "\nSua media: %.1f\n", media);
+        System.out.printf(nomeAluno + resultado + "\nSua media: %.1f\n", media);
 
         scanner.close();
     }
