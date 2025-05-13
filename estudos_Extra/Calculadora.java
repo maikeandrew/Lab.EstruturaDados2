@@ -20,7 +20,7 @@ public class Calculadora {
             double resultado = calcular(a, b, op);
             System.out.printf("Resultado: %.2f\n", resultado);
 
-        //catch para entradas invalias
+            //catch para entradas invalias
         } catch (InputMismatchException e) {
             System.out.println("Erro: Entrada invalida.");
         } catch (ArithmeticException | IllegalArgumentException e) {
@@ -29,7 +29,8 @@ public class Calculadora {
             scanner.close();
         }
     }
-        // Criei um metodo so mente para as operacoes
+
+    // Criei um metodo so mente para as operacoes
     private static double calcular(double a, double b, char op) {
         switch (op) {
             case '+':
