@@ -29,5 +29,4 @@ int main(){
     printf("O numero invertido e: %d", nInvertido);
 
     return 0;
-
 }

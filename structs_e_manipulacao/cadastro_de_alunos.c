@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-// Definindo a estrutura (struct) Aluno
 struct Aluno
 {
     char nome[50];
@@ -19,7 +18,7 @@ int main()
     int i;
     struct Aluno *alunos;
 
-    //Solicita ao usuário o número de alunos
+    //Solicita ao usuario o número de alunos
 
     printf("Quantos alunos deseja cadastrar? ");
     scanf("%d", &n);
@@ -36,7 +35,6 @@ int main()
 
     alunos = (struct Aluno *)malloc(n * sizeof(struct Aluno));
 
-    // Verifica se a alocação de memoria foi bem-sucedida
     if (alunos == NULL)
     {
         printf("Erro: Não foi possível alocar memoria para os alunos.\n");
@@ -65,7 +63,7 @@ int main()
         scanf("%f", &alunos[i].media);
     }
 
-    //Exibição dos Alunos Aprovados
+    //Exibicao dos Alunos Aprovados
 
     printf("\n--- Alunos Aprovados (Media >= %.1f) ---\n", MEDIA_APROVACAO);
     bool algumAprovado = false;

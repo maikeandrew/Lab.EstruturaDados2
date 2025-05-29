@@ -17,7 +17,6 @@ void listarProdutos(struct Produto *estoque, int totalProdutos);
 void buscarProduto(struct Produto *estoque, int totalProdutos);
 void limparBuffer();
 
-// Função Principal
 
 int main()
 {
@@ -73,7 +72,7 @@ int main()
     return 0;
 }
 
-// Implementação das Funções
+//Funcao para limpar o buffer
 
 void limparBuffer()
 {
@@ -81,7 +80,7 @@ void limparBuffer()
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
-// Função para cadastrar um novo produto
+// Funcao para cadastrar um novo produto
 
 void cadastrarProduto(struct Produto **estoque, int *totalProdutos, int *capacidadeEstoque)
 {
@@ -122,7 +121,7 @@ void cadastrarProduto(struct Produto **estoque, int *totalProdutos, int *capacid
     printf("Produto cadastrado com sucesso!\n");
 }
 
-// Função para listar todos os produtos
+// Funcao para listar todos os produtos
 
 void listarProdutos(struct Produto *estoque, int totalProdutos)
 {
@@ -148,7 +147,7 @@ void listarProdutos(struct Produto *estoque, int totalProdutos)
     printf("-------------------------------------------\n");
 }
 
-// Função para buscar um produto pelo código
+// Funcao para buscar um produto pelo código
 
 void buscarProduto(struct Produto *estoque, int totalProdutos)
 {

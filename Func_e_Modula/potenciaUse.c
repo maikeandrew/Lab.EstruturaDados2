@@ -23,10 +23,10 @@ int main(){
     int res_pontencia;
 
     printf("Digite a base: ");
-    scanf("%d", base);
+    scanf("%d", &base);
 
     printf("Digite o expoente (Inteiro nao negativo): ");
-    scanf("%d", expoente);
+    scanf("%d", &expoente);
 
     res_pontencia = CPotencia(base, expoente);
 

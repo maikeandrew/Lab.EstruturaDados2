@@ -11,14 +11,10 @@ struct Contato
 
 #define TAMANHO_INICIAL_AGENDA 5
 
-//Protótipos das Funções
-
 void adicionarContato(struct Contato **agenda, int *totalContatos, int *capacidadeAgenda);
 void listarContatos(struct Contato *agenda, int totalContatos);
 void buscarContato(struct Contato *agenda, int totalContatos);
 void limparBuffer();
-
-//Função Principal 
 
 int main()
 {
@@ -74,9 +70,8 @@ int main()
     return 0;
 }
 
-// Implementação das Funções
 
-// Função auxiliar para limpar o buffer de entrada
+// Funcao auxiliar para limpar o buffer de entrada
 
 void limparBuffer()
 {
@@ -85,7 +80,7 @@ void limparBuffer()
         ;
 }
 
-// Função para adicionar um novo contato
+// Funcao para adicionar um novo contato
 
 void adicionarContato(struct Contato **agenda, int *totalContatos, int *capacidadeAgenda)
 {
@@ -119,7 +114,7 @@ void adicionarContato(struct Contato **agenda, int *totalContatos, int *capacida
     printf("Contato adicionado com sucesso!\n");
 }
 
-// Função para listar todos os contatos
+// Funcao para listar todos os contatos
 
 void listarContatos(struct Contato *agenda, int totalContatos)
 {
@@ -143,7 +138,7 @@ void listarContatos(struct Contato *agenda, int totalContatos)
     printf("------------------------------\n");
 }
 
-// Função para buscar um contato por nome
+// Funcao para buscar um contato por nome
 
 void buscarContato(struct Contato *agenda, int totalContatos)
 {
